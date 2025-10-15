@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RCB Team – IPL 2025</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Poppins, sans-serif; }
+    body {
+      background:#151F28;
+      color:#fff;
+      padding:40px 20px;
+    }
+    h1 {
+      text-align:center;
+      margin-bottom:40px;
+      font-size:2.5em;
+      color:#E10600;
+    }
+    h2.section-title {
+      margin:50px 0 20px;
+      font-size:1.8em;
+      color:#FFD700;
+      border-bottom:2px solid #E10600;
+      display:inline-block;
+      padding-bottom:5px;
+    }
+    .team-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
+      gap:30px;
+      justify-items:center;
+    }
+    .card {
+      position:relative;
+      width:100%;
+      max-width:300px;
+      aspect-ratio:1;
+      border-radius:20px;
+      overflow:hidden;
+      cursor:pointer;
+      background:#191919;
+    }
+    .circle {
+      position:absolute; inset:0;
+    }
+    .circle::before {
+      content:'';
+      position:absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      border-radius:50%;
+      border:8px solid #E10600;
+      background:#191919;
+      transition:0.5s, background 0.5s;
+      filter:drop-shadow(0 0 10px #E10600) drop-shadow(0 0 40px #E10600);
+    }
+    .card:hover .circle::before {
+      border-radius:20px;
+      background:#E10600;
+    }
+    .logo {
+      position:absolute;
+      width:50%;
+      top:25%;
+      left:50%;
+      transform:translateX(-50%);
+      transition:0.5s;
+    }
+    .player-name {
+      position:absolute;
+      top:75%;
+      left:50%;
+      transform:translateX(-50%);
+      font-size:1.2em;
+      font-weight:600;
+      text-align:center;
+      color:#fff;
+      transition:0.5s;
+    }
+    .card:hover .logo,
+    .card:hover .player-name { transform:scale(0); opacity:0; }
+    .player-img {
+      position:absolute;
+      top:50%; left:50%;
+      transform:translate(-50%,-50%) scale(0) rotate(315deg);
+      width:80%;
+      transition:0.5s ease-in-out;
+      opacity:0;
+    }
+    .card:hover .player-img {
+      transform:translate(-50%,-50%) scale(1) rotate(15deg);
+      opacity:1;
+    }
+    .content {
+      position:absolute;
+      bottom:15px;
+      width:100%;
+      text-align:center;
+      opacity:0;
+      visibility:hidden;
+      transition:0.5s;
+    }
+    .card:hover .content {
+      opacity:1;
+      visibility:visible;
+    }
+    .content h3 { font-size:1.2em; margin-bottom:5px; }
+    .content p { font-size:0.9em; }
+  </style>
+</head>
+<body>
+  <h1>Royal Challengers Bengaluru | IPL 2025</h1>
+
+  <!-- ================== Batters ================== -->
+  <h2 class="section-title">Batters</h2>
+  <div class="team-grid">
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/597.png" class="logo">
+      <div class="player-name">Rajat Patidar</div>
+      <img src="rajat.png" class="player-img">
+      <div class="content"><h3>Rajat Patidar</h3><p>Batter • Captain</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/2.png" class="logo">
+      <div class="player-name">Virat Kohli</div>
+      <img src="image copy 2.png" class="player-img">
+      <div class="content"><h3>Virat Kohli</h3><p>Batter </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/55.png" class="logo">
+      <div class="player-name">Mayank Agarwal</div>
+      <img src="mayank-agarwal.jpg" class="player-img">
+      <div class="content"><h3>Mayank Agarwal</h3><p>Batter</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/3102.png" class="logo">
+      <div class="player-name">Swastik Chikara</div>
+      <img src="swastik-chikara.jpg" class="player-img">
+      <div class="content"><h3>Swastik Chikara</h3><p>Batter</p></div>
+  </div>
+  </div>
+
+  <!-- ================== Wicket-Keepers ================== -->
+  <h2 class="section-title">Wicket-Keepers</h2>
+  <div class="team-grid">
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1220.png" class="logo">
+      <div class="player-name">Phil Salt 🛦</div>
+      <img src="phil-salt.jpg" class="player-img">
+      <div class="content"><h3>Phil Salt</h3><p>Wicket-Keeper • Batter • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1000.png" class="logo">
+      <div class="player-name">Jitesh Sharma </div>
+      <img src="jitesh-sharma.jpg" class="player-img">
+      <div class="content"><h3>Jitesh Sharma</h3><p>Wicket-Keeper • Batter </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/82.png" class="logo">
+      <div class="player-name">Tim Seifert  🛦</div>
+      <img src="jitesh-sharma.jpg" class="player-img">
+      <div class="content"><h3>Tim Seifert</h3><p>Wicket-Keeper • Batter • ✈︎ </p></div>
+    </div>
+  </div>
+
+  <!-- ================== All-Rounders ================== -->
+  <h2 class="section-title">All-Rounders</h2>
+  <div class="team-grid">
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/183.png" class="logo">
+      <div class="player-name">Liam Livingstone  🛦</div>
+      <img src="liam-livingstone.jpg" class="player-img">
+      <div class="content"><h3>Liam Livingstone</h3><p>All-Rounder • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/17.png" class="logo">
+      <div class="player-name">Krunal Pandya</div>
+      <img src="krunal-pandya.jpg" class="player-img">
+      <div class="content"><h3>Krunal Pandya</h3><p>All-Rounder</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/636.png" class="logo">
+      <div class="player-name">Tim David  🛦</div>
+      <img src="tim-david.jpg" class="player-img">
+      <div class="content"><h3>Tim David</h3><p>All-Rounder • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/371.png" class="logo">
+      <div class="player-name">Romario Shepherd  🛦 </div>
+      <img src="romario-shepherd.jpg" class="player-img">
+      <div class="content"><h3>Romario Shepherd</h3><p>All-Rounder • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1483.png" class="logo">
+      <div class="player-name">Swapnil Sing </div>
+      <img src="romario-shepherd.jpg" class="player-img">
+      <div class="content"><h3>Swapnil Sing</h3><p>All-Rounder  </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1485.png" class="logo">
+      <div class="player-name">Manoj Bhandage</div>
+      <img src="romario-shepherd.jpg" class="player-img">
+      <div class="content"><h3>Manoj Bhandage</h3><p>All-Rounder </p></div>
+    </div>
+  </div>
+
+  <!-- ================== Bowlers ================== -->
+  <h2 class="section-title">Bowlers</h2>
+  <div class="team-grid">
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/978.png" class="logo">
+      <div class="player-name">Yash Dayal</div>
+      <img src="yash-dayal.jpg" class="player-img">
+      <div class="content"><h3>Yash Dayal</h3><p>Bowler</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/15.png" class="logo">
+      <div class="player-name">Bhuvneshwar Kumar</div>
+      <img src="bhuvneshwar-kumar.jpg" class="player-img">
+      <div class="content"><h3>Bhuvneshwar Kumar</h3><p>Bowler</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/36.png" class="logo">
+      <div class="player-name">Josh Hazlewood  🛦</div>
+      <img src="josh-hazlewood.jpg" class="player-img">
+      <div class="content"><h3>Josh Hazlewood</h3><p>Bowler • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/99.png" class="logo">
+      <div class="player-name">Lungi Ngidi  🛦</div>
+      <img src="lungi-ngidi.jpg" class="player-img">
+      <div class="content"><h3>Lungi Ngidi</h3><p>Bowler • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/827.png" class="logo">
+      <div class="player-name">Blessing Muzarabani  🛦</div>
+      <img src="lungi-ngidi.jpg" class="player-img">
+      <div class="content"><h3>Blessing Muzarabani</h3><p>Bowler • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/813.png" class="logo">
+      <div class="player-name">Nuwan Tusahara  🛦</div>
+      <img src="lungi-ngidi.jpg" class="player-img">
+      <div class="content"><h3>Nuwan Tusahara</h3><p>Bowler • ✈︎ </p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/172.png" class="logo">
+      <div class="player-name">Rasikh Dar</div>
+      <img src="bhuvneshwar-kumar.jpg" class="player-img">
+      <div class="content"><h3>Rasikh Dar</h3><p>Bowler</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1932.png" class="logo">
+      <div class="player-name">Suyash Sharma</div>
+      <img src="bhuvneshwar-kumar.jpg" class="player-img">
+      <div class="content"><h3>Suyash Sharma</h3><p>Bowler</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/1935.png" class="logo">
+      <div class="player-name">Mohit Rathee</div>
+      <img src="bhuvneshwar-kumar.jpg" class="player-img">
+      <div class="content"><h3>Mohit Rathee</h3><p>Bowler</p></div>
+    </div>
+
+    <div class="card"><div class="circle"></div>
+      <img src="https://documents.iplt20.com/ipl/IPLHeadshot2025/3574.png" class="logo">
+      <div class="player-name">Abhinandan Singh</div>
+      <img src="bhuvneshwar-kumar.jpg" class="player-img">
+      <div class="content"><h3>Abhinandan Singh</h3><p>Bowler</p></div>
+    </div>
+  </div>
+
+</body>
+</html>

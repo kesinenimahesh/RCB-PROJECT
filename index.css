@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #151F28; /* match team.html */
+    background-repeat: no-repeat;
+    color: #e8e8e8;
+}
+section{
+    background-color: #7b0e0b;
+    text-align:center;
+    height: 300px;
+    width: 100%;
+    
+}
+    h1{
+    font-size:80px ;
+    color:rgb(223, 170, 91);
+    padding-top: 30px;
+    
+}
+h2{
+    color:red;
+}
+img{
+    padding: 20px;
+    float: left;
+    height:300px ;
+    width: 20%;
+    display:flex ;
+
+}
+ 
+div{
+    text-decoration-line: none;
+    float: none;
+    padding: 40px ; 
+
+}
+a{
+    
+    color: white;
+    font-size: 20px;
+    text-decoration-line: none;
+    padding: 60px ;
+    border-radius: 10px;
+}
+a:hover{
+    color:rgb(223, 170, 91) ;
+}
+rcb2{
+    width: 600%; 
+    height: 600px;
+}
+h5{
+    float:right;
+}
+
+img.rcb
+{
+    float: right;
+    flex: auto;
+}
+p{
+    justify-content: right;
+    
+}
+.mahi{
+    width: 600px;
+    height: 500px;
+}
+figure[typeof~='mw:File/Thumb'] > figcaption, figure[typeof~='mw:File/Frame'] > figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background-color: inherit;
+    line-height: 1.4em;
+    word-break: break-word;
+    text-align: start;
+    padding: 0 6px 6px 6px;
+}
+user agent stylesheet
+figcaption {
+    display: block;
+    unicode-bidi: isolate;
+}
