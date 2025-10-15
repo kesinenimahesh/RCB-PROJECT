@@ -2,22 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=1200, user-scalable=no">
   <title>RCB Team – IPL 2025</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
     * { margin:0; padding:0; box-sizing:border-box; font-family:Poppins, sans-serif; }
-    body {
+
+    /* Force same layout on all screens */
+    html, body {
+      width:1200px;
+      margin:0 auto;
+      overflow-x:hidden;
       background:#151F28;
       color:#fff;
       padding:40px 20px;
     }
+
     h1 {
       text-align:center;
       margin-bottom:40px;
       font-size:2.5em;
       color:#E10600;
     }
+
     h2.section-title {
       margin:50px 0 20px;
       font-size:1.8em;
@@ -26,12 +33,14 @@
       display:inline-block;
       padding-bottom:5px;
     }
+
     .team-grid {
       display:grid;
       grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
       gap:30px;
       justify-items:center;
     }
+
     .card {
       position:relative;
       width:100%;
@@ -42,9 +51,11 @@
       cursor:pointer;
       background:#191919;
     }
+
     .circle {
       position:absolute; inset:0;
     }
+
     .circle::before {
       content:'';
       position:absolute;
@@ -56,10 +67,12 @@
       transition:0.5s, background 0.5s;
       filter:drop-shadow(0 0 10px #E10600) drop-shadow(0 0 40px #E10600);
     }
+
     .card:hover .circle::before {
       border-radius:20px;
       background:#E10600;
     }
+
     .logo {
       position:absolute;
       width:50%;
@@ -68,6 +81,7 @@
       transform:translateX(-50%);
       transition:0.5s;
     }
+
     .player-name {
       position:absolute;
       top:75%;
@@ -79,8 +93,10 @@
       color:#fff;
       transition:0.5s;
     }
+
     .card:hover .logo,
     .card:hover .player-name { transform:scale(0); opacity:0; }
+
     .player-img {
       position:absolute;
       top:50%; left:50%;
@@ -89,10 +105,12 @@
       transition:0.5s ease-in-out;
       opacity:0;
     }
+
     .card:hover .player-img {
       transform:translate(-50%,-50%) scale(1) rotate(15deg);
       opacity:1;
     }
+
     .content {
       position:absolute;
       bottom:15px;
@@ -102,10 +120,12 @@
       visibility:hidden;
       transition:0.5s;
     }
+
     .card:hover .content {
       opacity:1;
       visibility:visible;
     }
+
     .content h3 { font-size:1.2em; margin-bottom:5px; }
     .content p { font-size:0.9em; }
   </style>
